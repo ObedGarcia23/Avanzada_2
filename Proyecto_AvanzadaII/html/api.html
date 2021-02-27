@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/api.css">
+</head>
+<style>
+    .principal{
+        justify-content: center;
+    }
+    .lista{
+        color: white;
+        margin-left: 450px;
+        width: 950px;
+        text-align: center;
+        
+    }
+    .mensaje1{
+        margin-left: 450px;
+        width: 950px;
+
+    }
+    .menu1{
+       background-color: antiquewhite;
+       height: 60px;
+       display: flex;
+       justify-content: center;
+    }
+    .menu1>h2{
+        margin-right: 40px;
+    }
+    .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 120px;
+        border-radius: 10px;
+}
+    .button:hover{
+        background-color: red;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+    <div class="menu1">
+        <script src="../JS/Api.js"></script>
+        <h2>Chuck Norris te dice:</h2>
+        <button class="button" type ="button" onclick="nuevoPerfil()">Consultar </button>
+   
+
+    </div>
+    
+    
+    <div class="principal" style="height: 750px;">
+
+        <div class="mensaje1" id="contenedor">
+
+        </div>  
+        <br>
+        <br>
+        <div class="lista" id="mostrarDatos" style="background-color: black;">
+            <p >Historial</p>
+        </div>
+
+
+    </div>
+    
+
+</body>
+</html>
+

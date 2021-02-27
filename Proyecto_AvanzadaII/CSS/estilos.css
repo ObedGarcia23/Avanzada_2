@@ -1,0 +1,194 @@
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;  
+   }
+
+#btn-menu{
+    display: none;
+}
+
+.header label{
+    display: none;
+}
+
+.menu ul{
+    background:#F4F4F4;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    
+}
+.menu ul ul{
+    display: none;
+}
+.menu a{
+  display: block;
+  padding: 15px 28px; 
+  color: black
+  
+}
+.menu a:hover{
+   background:white ;
+   color: red;
+}
+
+.menu a span{
+    margin: 10px;
+}
+.menu ul li:hover ul{
+    display: block;
+    position: absolute;
+}
+@media(max-width:1024px){
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top: 58px;
+        left: 0;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: all 0.3 s ;
+    
+    }
+   
+    .menu ul{
+        display: block;
+        background: #555;
+    }
+    .menu ul li:hover ul {
+     display: none;
+    }
+    .menu a span{
+        position: absolute;
+        right: 5px;
+    }
+    #btn-menu :checked ~ .menu{
+        transform: translateX (0%);
+    }
+}
+
+
+.header {
+    
+    padding-top: 0.3125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4F4F4;
+    color: black;
+    height: 55.5px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.header_right{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.body{ 
+    margin: 0;
+    width: 100%;
+}
+
+
+.Menu{
+    justify-content: space-between;
+    padding: 20px;
+    font-size: medium;
+    font-weight: normal;
+}
+.Menu:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+
+.contenedor{
+    
+    background-image: url(https://wallpaperaccess.com/full/1076476.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+    max-width: 100%;
+    justify-content: space-between;
+    
+}
+
+/*
+.contenedor iframe,
+.contenedor object,
+.contenedor embed,
+.contenedor video{
+    height: 100%;
+    width: 100%;
+    height: 60%;
+}
+
+.video{
+    float: left;
+    padding: 10px;
+    width: 100%;
+    margin: 150px;
+    margin-top: 80px;
+    margin-left: 90px;
+    color: white;
+}
+*/
+
+video{
+    float: left;
+    padding: 10px;
+    margin-left: 25%;
+    margin-top: 80px;
+    width: 56.25%;
+}
+
+.mision{
+    
+    float: left;
+    padding: 10px;
+    width: 250px;
+    margin: 150px;
+    margin-top: -12%;
+    margin-left: 20px;
+    color: white;
+
+}
+
+.contenedor-contacto{
+
+    width: 100%;
+    height: 920px;
+    /*border: 5px solid red;*/
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-left: 450px;
+
+}
+
+.contenido{
+    
+ 
+    width: 90px;
+    height: 50px;
+}
+
+.form{
+
+    width: 640px;
+    height: 720px;
+    background-color: black;
+   
+}
